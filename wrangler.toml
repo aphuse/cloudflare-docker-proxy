@@ -19,17 +19,9 @@ routes = [
   { pattern = "k8s-gcr.aphuse.cloudns.ch", custom_domain = true },
   { pattern = "k8s.aphuse.cloudns.ch", custom_domain = true },
   { pattern = "ghcr.aphuse.cloudns.ch", custom_domain = true },
-  { pattern = "cloudsmith.aphuse.cloudns.ch", custom_domain = true },
 ]
 
 [env.production.vars]
 MODE = "production"
 TARGET_UPSTREAM = ""
 
-[env.staging]
-name = "cloudflare-docker-proxy-staging"
-route = { pattern = "docker-staging.aphuse.cloudns.ch", custom_domain = true }
-
-[env.staging.vars]
-MODE = "staging"
-TARGET_UPSTREAM = ""

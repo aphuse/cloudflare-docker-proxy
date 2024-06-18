@@ -13,10 +13,6 @@ const routes = {
   "k8s-gcr.aphuse.cloudns.ch": "https://k8s.gcr.io",
   "k8s.aphuse.cloudns.ch": "https://registry.k8s.io",
   "ghcr.aphuse.cloudns.ch": "https://ghcr.io",
-  "cloudsmith.aphuse.cloudns.ch": "https://docker.cloudsmith.io",
-
-  // staging
-  "docker-staging.aphuse.cloudns.ch": dockerHub,
 };
 
 function routeByHosts(host) {
